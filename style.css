@@ -1,0 +1,181 @@
+/* ____________________________________ */
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Montserrat:wght@300&family=Roboto&display=swap");
+/* ____________________________________ */
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ____________________________________ */
+/* Root - Variables */
+:root {
+  /* ----Primary Heading---- */
+  --primary-heading-font-family: "Roboto", sans-serif;
+  --primary-heading-font-size: 2.5rem;
+  /* --primary-heading-font-weight:  */
+  /* ----Secondary Heading---- */
+  --secondary-heading-font-family: "Montserrat", sans-serif;
+  --secondary-heading-font-size: 2rem;
+  /* --secondary-heading-font-weight: */
+  /* ----Paragraphy Typology---- */
+  --paragraph-font-family: "Montserrat", sans-serif;
+  --paragraph-font-size: 1.2rem;
+  --paragraph-font-weight: 700;
+}
+/* Body */
+body {
+  background-image: url("background-img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* ____________________________________ */
+/* Score Division */
+#score {
+  font-size: 1.3rem;
+  color: #000000;
+  position: absolute;
+  top: 0;
+  left: 70px;
+  width: 15%;
+  height: 10%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 5px 10px;
+  font-family: var(--primary-heading-font-family);
+  text-align: center;
+  box-shadow: 2px 2px 6px #ffffff;
+}
+/* ____________________________________ */
+/* Start Screen Division - Section 2 */
+#sec-2 {
+  height: 100vh;
+}
+#startScreen {
+  background-color: #f5abc9;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #f7fd04;
+  box-shadow: 2px 2px 4px 2px #ffffff;
+}
+.btn {
+  background: #24c7dc;
+  background-image: -webkit-linear-gradient(top, #24c7dc, #514a9d);
+  background-image: -moz-linear-gradient(top, #24c7dc, #514a9d);
+  background-image: -ms-linear-gradient(top, #24c7dc, #514a9d);
+  background-image: -o-linear-gradient(top, #24c7dc, #514a9d);
+  background-image: linear-gradient(to bottom, #24c7dc, #514a9d);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.btn:hover {
+  background: #514a9d;
+  background-image: -webkit-linear-gradient(top, #514a9d, #24c7dc);
+  background-image: -moz-linear-gradient(top, #514a9d, #24c7dc);
+  background-image: -ms-linear-gradient(top, #514a9d, #24c7dc);
+  background-image: -o-linear-gradient(top, #514a9d, #24c7dc);
+  background-image: linear-gradient(to bottom, #514a9d, #24c7dc);
+  text-decoration: none;
+}
+
+/* ____________________________________ */
+/* Gaming Area Division */
+#gamingArea {
+  width: 40%;
+  height: 100vh;
+  background-color: #1c1d2b;
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+  border: 8px dashed #dddddd;
+}
+.roadLines {
+  background: #ffffff;
+  margin-left: 295px;
+  width: 10px;
+  height: 100px;
+  position: absolute;
+  margin: 4% 50%;
+}
+.car {
+  /* background-image: url("car.png"); */
+  background-color: #24c7dc;
+  width: 10%;
+  height: 12%;
+  /* background-size: contain;
+  background-repeat: no-repeat;
+  */
+  position: absolute;
+  bottom: 0px;
+  z-index: 2;
+}
+.enemyCars {
+  /* 
+  
+  position: absolute; */
+  /* width: 30%;
+  height: 17%;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+
+  z-index: 2; */
+
+  width: 10%;
+  height: 12%;
+  position: absolute;
+  bottom: 0px;
+  z-index: 2;
+}
+/* ____________________________________ */
+/* Utility Classes */
+/* ----display: flex;---- */
+.d-flex {
+  display: flex;
+}
+.align-items-center {
+  align-items: center;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.flex-column {
+  flex-direction: column;
+}
+/* ----Center Alignment---- */
+.center {
+  text-align: center;
+}
+/* ----Headings---- */
+.primary-heading {
+  font-family: var(--primary-heading-font-family);
+  font-size: var(--primary-heading-font-size);
+  /* font-weight: ; */
+}
+.secondary-heading {
+  font-family: var(--secondary-heading-font-family);
+  font-size: var(--secondary-heading-font-size);
+  /* font-weight: ; */
+}
+.para-typo {
+  font-family: var(--paragraph-font-family);
+  font-size: var(--paragraph-font-size);
+  font-weight: var(--paragraph-font-weight);
+}
+.hidden {
+  display: none;
+}
